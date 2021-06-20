@@ -11,7 +11,5 @@ mediapipe hand example:
 -1. Do installer install opencv3.4.10 on c: IMPORTANT
 0. In mediapipe repo
 1. bazel build -c opt --define MEDIAPIPE_DISABLE_GPU=1 --action_env PYTHON_BIN_PATH="C://Users//User//AppData//Local//Programs//Python//Python37//python.exe" 
-2. mediapipe/examples/desktop/hand_tracking:hand_tracking_cpu
-GLOG_logtostderr=1 bazel-bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_cpu \
-  --calculator_graph_config_file=mediapipe/graphs/hand_tracking/hand_tracking_desktop_live.pbtxt
-  
+2. set GLOG_logtostderr=1
+3. bazel-bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_cpu "--calculator_graph_config_file=mediapipe/graphs/hand_tracking/hand_tracking_desktop_live.pbtxt"
