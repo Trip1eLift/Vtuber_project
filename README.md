@@ -1,7 +1,7 @@
 # Vtuber_project
 Attempting to make my own Vtubing engine using mostly C++
 
-It requires OpenCV4.5 to run.
+It requires OpenCV4.5 to run. (Better to use 3.4.10 to match mediapipe since the begining...)
 https://opencv.org/releases/
 
 It also requires mediapipe.
