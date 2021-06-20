@@ -19,3 +19,9 @@ mediapipe hand example:
 
 ## Python
 uses PyCharm to import opencv and mediapipe. (Easy Peasy)
+
+current version:
+
+opencv-python 4.5.2.54
+opencv-contrib-python 4.5.2.54
+mediapipe 0.8.5
