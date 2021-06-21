@@ -26,7 +26,7 @@ def haarcascades_detection():
             frame = cv2.rectangle(frame, (x, y), (x+w, y+h), (255, 0, 0), 2)
 
         enlarge_factor = 2
-        frame = cv2.resize(frame, (frame.shape[0] * enlarge_factor, frame.shape[1] * enlarge_factor))
+        frame = cv2.resize(frame, (frame.shape[1] * enlarge_factor, frame.shape[0] * enlarge_factor))
         cv2.imshow('webcam', frame)
         global fps
         if cv2.waitKey(int(1000 / fps)) >= 0:
@@ -65,7 +65,7 @@ def dnn_detection():
                 frame = cv2.rectangle(frame, (draw_x_start, draw_y_start), (draw_x_end, draw_y_end), (255, 0, 0), 2)
 
         enlarge_factor = 2
-        frame = cv2.resize(frame, (frame.shape[0] * enlarge_factor, frame.shape[1] * enlarge_factor))
+        frame = cv2.resize(frame, (frame.shape[1] * enlarge_factor, frame.shape[0] * enlarge_factor))
         cv2.imshow('webcam', frame)
         global fps
         if cv2.waitKey(int(1000 / fps)) >= 0:
@@ -112,7 +112,7 @@ def gura_draw_over():
                 frame = cv2.rectangle(frame, (draw_x_start, draw_y_start), (draw_x_end, draw_y_end), (255, 0, 0), 2)
 
         enlarge_factor = 2
-        frame = cv2.resize(frame, (frame.shape[0] * enlarge_factor, frame.shape[1] * enlarge_factor))
+        frame = cv2.resize(frame, (frame.shape[1] * enlarge_factor, frame.shape[0] * enlarge_factor))
         draw_x_start = draw_x_start * enlarge_factor
         draw_y_start = draw_y_start * enlarge_factor
         draw_x_end = draw_x_end * enlarge_factor
