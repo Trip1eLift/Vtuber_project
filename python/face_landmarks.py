@@ -22,7 +22,7 @@ def face_mesh_trace():
         if not success:
             print("Can't receive frame (stream end?). Exiting ...")
             break
-        frame = frame[90:390, 170:470]
+        #frame = frame[90:390, 170:470]
         frame = cv2.flip(frame, 1)
         frameRGB = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = faceMesh.process(frameRGB)
