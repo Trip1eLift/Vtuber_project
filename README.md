@@ -1,6 +1,6 @@
 # Vtuber_project
 
-## C++
+## C++ (JUST IGNORE C++)
 Attempting to make my own Vtubing engine using mostly C++
 Attempt failed, no one use C++ for mediapipe
 
@@ -25,3 +25,12 @@ current version:
 opencv-python 4.5.2.54
 opencv-contrib-python 4.5.2.54
 mediapipe 0.8.5
+
+## Blender
+use Blender 2.93
+set port to 5002 for client_blender_python/socket_testing/socket_client.
+set port to 5001 for server_python/main.py with face_landmarks.py library.
+
+## Testing
+client_blender_python/socket_testing/socket_server can tests client_blender_python/socket_testing/socket_client
+client_blender_python/socket_testing/socket_client set to port 5001 can test server_python/main.py with face_landmarks.py library
