@@ -18,7 +18,7 @@ mediapipe hand example:
 3. bazel-bin/mediapipe/examples/desktop/hand_tracking/hand_tracking_cpu "--calculator_graph_config_file=mediapipe/graphs/hand_tracking/hand_tracking_desktop_live.pbtxt"
 
 ## Python
-uses PyCharm to import opencv and mediapipe. (Easy Peasy)
+uses PyCharm to import opencv-python, mediapipe, and flask. (Easy Peasy)
 
 current version:
 
